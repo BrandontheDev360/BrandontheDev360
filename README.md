@@ -1,16 +1,26 @@
-### Hi there 👋
+# 👹 Brandon Nguyen
 
-<!--
-**BrandontheDev360/BrandontheDev360** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**`< Software Engineer @Cigna />`**
 
-Here are some ideas to get you started:
+<details>
+ <summary><h3>👨‍💻 Brandon's Coding Journey</h3></summary>
+  Hello nice to meet you, my name is Brandon Nguyen, and I'm a Java Software Engineer. My story started out as a lost college IUPUI undergraduate majoring in Psychology. After the realization I didn't know what I wanted to do with my career, so on a whim I attended an introductory course at Eleven Fifty. After that I discovered my new found appreciation for Computer Science and Web Development at Eleven Fifty Academy as a student. Which has led me into the current technological journey I am on. I hope to inspire others aspiring software engineers with my own journey, progress, and help others learn from my failures. 
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+---
+
+### 🧰 Languages and Tools
+
+<img align="left" alt="Java" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
+<img align="left" alt="Spring" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" />
+<img align="left" alt="TypeScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
+<img align="left" alt="Git" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+<img align="left" alt="HTML" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" />
+<img align="left" alt="CSS" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" />
+<img align="left" alt="JavaScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+<img align="left" alt="React" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+<img align="left" alt="NodeJS" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+<img align="left" alt="GitHub" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+<br />
+
+#
