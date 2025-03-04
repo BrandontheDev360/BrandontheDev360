@@ -7,26 +7,12 @@
 
 
 
-PR Description:
+💡 Reviewer’s Note:
 
-This PR implements an aggregation-based solution for dynamically filtering and processing group health plan records. The new pipeline computes a planYear from the planEndDate (stored as a String) and a modifiedDate (choosing between updatedDate and createdDate). Using the $setWindowFields stage, it partitions documents by groupHealthPlanName and groupHealthPlanNumber and computes the maximum plan year within each group. This allows the pipeline to filter out older records when duplicate group health plan entries exist—retaining only the current year record per group. In addition, the solution supports optional filters (e.g., marketSegment, region, minPrice) and returns a paginated result as a Page<PlanInfo>.
+This PR required a deep dive into MongoDB’s aggregation framework, particularly working with custom aggregation operations to implement $setWindowFields for handling duplicate group health plan records. Since MongoDB does not provide built-in support for this in Spring Data, I had to create a custom aggregation operation to ensure accurate partitioning and filtering.
 
-Change Log:
+Given the complexity of the logic and the impact on data accuracy (especially in filtering out prior year records while preserving valid duplicates), I highly encourage thorough testing and review to validate edge cases. Please take a close look at the aggregation stages, computed fields (planYear, modifiedDate), and how filtering is applied dynamically. Let me know if anything needs clarification! 
 
-Dynamic Filtering:
-
-Added support for optional request parameters (marketSegment, region, and minPrice) using a dynamic $match stage.
-Computed Fields:
-
-Introduced planYear field by converting the planEndDate string to a Date and extracting the year.
-Added modifiedDate field which uses updatedDate if available, otherwise falls back to createdDate.
-Aggregation Enhancements:
-
-Implemented $setWindowFields to partition records by groupHealthPlanName and groupHealthPlanNumber and compute maxPlanYear for each group.
-Added a filtering stage that retains only documents where planYear equals the computed maxPlanYear, ensuring that only the current year record is kept when duplicates exist.
-Pagination:
-
-Integrated pagination support via skip/limit stages and implemented a separate aggregation for total count.
 ---
 
 ### 🧰 Languages and Tools
