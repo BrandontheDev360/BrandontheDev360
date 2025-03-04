@@ -5,27 +5,6 @@
  <h3>👨‍💻 Brandon's Coding Journey</h3>
   Hello nice to meet you, my name is Brandon Nguyen, and I'm a Java Software Engineer. My story started out as a lost college IUPUI undergraduate majoring in Psychology. After the realization I didn't know what I wanted to do with my career, so on a whim I attended an introductory course at Eleven Fifty. After that I discovered my new found appreciation for Computer Science and Web Development at Eleven Fifty Academy. Which has led me into the current technological journey I am on. I hope to inspire others aspiring software engineers with my own journey, progress, and help others learn from my failures. 
 
-
- // 3. Use $setWindowFields to compute maxPlanYear for each group.
-        Document setWindowFieldsDoc = new Document("$setWindowFields",
-            new Document("partitionBy", new Document("groupHealthPlanName", "$groupHealthPlanName")
-                                            .append("groupHealthPlanNumber", "$groupHealthPlanNumber"))
-                .append("sortBy", new Document("planYear", -1).append("modifiedDate", -1))
-                .append("output", new Document("maxPlanYear",
-                    new Document("$max", "$planYear")
-                        .append("window", new Document("documents", Arrays.asList("unbounded", "unbounded")))
-                ))
-        );
-        CustomAggregationOperation setWindowFieldsOp = new CustomAggregationOperation(setWindowFieldsDoc);
-        commonOperations.add(setWindowFieldsOp);
-
-        // 4. Filter out records where planYear is not equal to maxPlanYear.
-        Document matchExprDoc = new Document("$match", new Document("$expr",
-                new Document("$eq", Arrays.asList("$planYear", "$maxPlanYear"))
-        ));
-        CustomAggregationOperation matchExprOp = new CustomAggregationOperation(matchExprDoc);
-        commonOperations.add(matchExprOp);
-
 ---
 
 ### 🧰 Languages and Tools
