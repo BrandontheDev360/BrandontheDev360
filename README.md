@@ -6,7 +6,6 @@
   Hello nice to meet you, my name is Brandon Nguyen, and I'm a Java Software Engineer. My story started out as a lost college IUPUI undergraduate majoring in Psychology. After the realization I didn't know what I wanted to do with my career, so on a whim I attended an introductory course at Eleven Fifty. After that I discovered my new found appreciation for Computer Science and Web Development at Eleven Fifty Academy. Which has led me into the current technological journey I am on. I hope to inspire others aspiring software engineers with my own journey, progress, and help others learn from my failures. 
 
 {
-  "$project": {
     "reportingInfo.rxdcReportingOption": 1,
     "otherEntityInfo": 1,
     "planInfo": 1,
@@ -16,16 +15,6 @@
         "then": true,
         "else": false
       }
-    },
-    "isPriorYear": {
-      "$cond": {
-        "if": { "$eq": ["$otherEntityInfo.referenceYear", 2023] },  // Assuming 2023 is the prior year
-        "then": true,
-        "else": false
-      }
-    }
-  }
-}
 
 
 
