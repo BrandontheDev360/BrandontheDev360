@@ -9,12 +9,13 @@
   {
     "$match": {
       "$or": [
-        { "reportingInfo.rxdcReportingOption": { "$regex": "^(?i)Aggregated Reporting$" } },
-        { "reportingInfo.rxdcReportingOption": { "$regex": "^(?i)Aggregated & Formatted P/D Reports$" } }
+        { "reportingInfo.rxdcReportingOption": { "$regex": "Aggregated Reporting", "$options": "i" } },
+        { "reportingInfo.rxdcReportingOption": { "$regex": "Aggregated & Formatted P/D Reports", "$options": "i" } }
       ]
     }
   }
 ]
+
 
 
 ---
