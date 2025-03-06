@@ -11,10 +11,19 @@
     "planInfo": 1,
     "isCurrentYear": {
       "$cond": {
-        "if": { "$eq": ["$otherEntityInfo.referenceYear", 2024] },  // Assuming 2024 is the current year
+        "if": { "$eq": ["$otherEntityInfo.referenceYear", 2024] },  
         "then": true,
         "else": false
       }
+    },
+    "isPriorYear": {
+      "$cond": {
+        "if": { "$eq": ["$otherEntityInfo.referenceYear", 2023] }, 
+        "then": true,
+        "else": false
+      }
+    }
+  }
 
 
 
