@@ -6,7 +6,7 @@
   Hello nice to meet you, my name is Brandon Nguyen, and I'm a Java Software Engineer. My story started out as a lost college IUPUI undergraduate majoring in Psychology. After the realization I didn't know what I wanted to do with my career, so on a whim I attended an introductory course at Eleven Fifty. After that I discovered my new found appreciation for Computer Science and Web Development at Eleven Fifty Academy. Which has led me into the current technological journey I am on. I hope to inspire others aspiring software engineers with my own journey, progress, and help others learn from my failures. 
 
 .append("output", new Document("denseRank",
-        new Document("$denseRank", new Document("window", new Document("documents", Arrays.asList("unbounded", "current"))))))
+        new Document("$denseRank", new Document()))  // 🔥 Empty document {} is correct!
 );
 
 ---
